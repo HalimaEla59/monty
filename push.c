@@ -13,7 +13,7 @@ void push(stack_t **stack, unsigned int line_number)
 	stack_t *res, *temp;
 
 	argument = strtok(NULL, "\n \t");
-	if(!is_int(argument))
+	if (!is_int(argument))
 	{
 		fprintf(stdout, "L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
@@ -26,12 +26,10 @@ void push(stack_t **stack, unsigned int line_number)
 		fprintf(stdout, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
-	/* we put the value in the stack result res */
-	res->n = value;
+	res->n = value; /*we put the value in stack res*/
 	res->prev = NULL;
 	res->next = NULL;
-	/* we have three cases: */
-	/* case 1: if stack is empty: */
+	/* 3 cases: case 1: if stack is empty: */
 	if ((*stack) == NULL)
 		*stack = res;
 	/* case 2: if stack is a stack LIFO */

@@ -6,7 +6,7 @@
  * @line_number: line number
  */
 
-void pop(stack_t **satck, unsigned int line_number)
+void pop(stack_t **stack, unsigned int line_number)
 {
 	/* if the satck is empty: */
 	if ((*stack) == NULL)
