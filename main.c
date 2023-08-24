@@ -50,7 +50,8 @@ int main(int argc, char **argv)
 			instruction->f(&top, line_number);
 		else
 		{
-			fprintf(stdout, "L%d: unknown instruction %s\n", line_number, instruction->opcode);
+			fprintf(stdout, "L%d: unknown instruction %s\n",
+					line_number, instruction->opcode);
 			if (L)
 				free(L);
 			if (top)
