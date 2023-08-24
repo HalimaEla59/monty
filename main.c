@@ -43,15 +43,14 @@ int main(int argc, char **argv)
 			free(instruction);
 			if (L)
 				free(L);
-			L = NULL;
+			/*L = NULL;*/
 			continue;
 		}
 		if (instruction->f)
 			instruction->f(&top, line_number);
 		else
 		{
-			fprintf(stdout, "L%d: unknown instruction %s\n",
-				line_number, instruction->opcode);
+			fprintf(stdout, "L%d: unknown instruction %s\n", line_number, instruction->opcode);
 			if (L)
 				free(L);
 			if (top)
@@ -62,7 +61,7 @@ int main(int argc, char **argv)
 		}
 		if (L)
 			free(L);
-		L = NULL;
+		/*L = NULL;*/
 		free(instruction);
 	}
 	if (L)
