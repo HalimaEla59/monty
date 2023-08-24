@@ -44,3 +44,17 @@ instruction_t *check_instruc(char *line)
 	}
 	return (instruction);
 }
+
+/**
+ * get_opcode - gets the opcode
+ * @s: string of line of code
+ * Return: opcode
+ */
+
+char *get_opcode(char *s)
+{
+	char *opcode;
+
+	opcode = strtok(s, "\n\t");
+	return (opcode);
+}

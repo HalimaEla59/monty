@@ -51,5 +51,7 @@ void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 instruction_t *check_instruct(char *line);
+char *get_opcode(char *s);
+void free_stack(stack_t *h);
 
 #endif
