@@ -35,13 +35,13 @@ void push(stack_t **stack, unsigned int line_number)
 	if ((*stack) == NULL)
 		*stack = res;
 	/* case 2: if stack is a stack LIFO */
-	else if (idx == 1)
+	else if (fifolifo)
 	{
 		res->next = *stack;
 		*stack = res;
 	}
 	/* case 3: if stack is a queue FIFO */
-	else if (idx == 0)
+	else
 	{
 		temp = *stack;
 		while (temp->next != NULL)

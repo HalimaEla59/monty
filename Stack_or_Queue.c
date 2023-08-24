@@ -10,7 +10,7 @@ void is_stack(stack_t **stack, unsigned int line_number)
 {
 	UNUSED(stack);
 	UNUSED(line_number);
-	idx = 1;
+	fifolifo = 1;
 }
 
 /**
@@ -23,5 +23,5 @@ void is_queue(stack_t **stack, unsigned int line_number)
 {
 	UNUSED(stack);
 	UNUSED(line_number);
-	idx = 0;
+	fifolifo = 0;
 }

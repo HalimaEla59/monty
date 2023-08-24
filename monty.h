@@ -38,7 +38,7 @@ typedef struct intruction_s
 
 #define MAX 1024
 #define UNUSED(x) (void)(x)
-extern int idx;
+extern int fifolifo;
 
 void push(stack_t **stack, unsigned int line_number);
 void is_stack(stack_t **stack, unsigned int line_number);
