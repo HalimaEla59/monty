@@ -54,5 +54,9 @@ void nop(stack_t **stack, unsigned int line_number);
 instruction_t *check_instruc(char *line);
 char *get_opcode(char *s);
 void free_stack(stack_t *h);
+void sub(stack_t **stack, unsigned int line_number);
+void div(stack_t **stack, unsigned int line_number);
+void mul(stack_t **stack, unsigned int line_number);
+void mod(stack_t **stack, unsigned int line_number);
 
 #endif

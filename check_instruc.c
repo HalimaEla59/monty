@@ -41,6 +41,14 @@ instruction_t *check_instruc(char *line)
 			instruction->f = is_stack;
 		if (strcmp(instruction->opcode, "queue") == 0)
 			instruction->f = is_queue;
+		if (strcmp(instruction->opcode, "sub") == 0)
+			instruction->f = sub;
+		if (strcmp(instruction->opcode, "div") == 0)
+			instruction->f = div;
+		if (strcmp(instruction->opcode, "mul") == 0)
+			instruction->f = mul;
+		if (strcmp(instruction->opcode, "mod") == 0)
+			instruction->f = mod;
 	}
 	return (instruction);
 }
