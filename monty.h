@@ -36,4 +36,12 @@ typedef struct intruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+#define MAX 1024
+#define UNUSED(x) (void)(x)
+extern int idx;
+
+void push(stack_t **stack, unsigned int line_number);
+void is_stack(stack_t **stack, unsigned int line_number);
+void is_queue(stack_t **stack, unsigned int line_number);
+
 #endif
