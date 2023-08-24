@@ -49,6 +49,8 @@ instruction_t *check_instruc(char *line)
 			instruction->f = mul;
 		if (strcmp(instruction->opcode, "mod") == 0)
 			instruction->f = mod;
+		if (strcmp(instruction->opcode, "pchar") == 0)
+			instruction->f = pchar;
 	}
 	return (instruction);
 }
