@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	while (getline(&L, &size, file) != -1)
 	{
 		line_number++;
-		instruction = parse_line(L);
+		instruction = check_instruc(L);
 
 		if (!(instruction->opcode) || instruction->opcode[0] == '#')
 		{
