@@ -1,5 +1,7 @@
 #include "monty.h"
 
+int fifolifo = 1;
+
 /**
  * is_stack - LIFO
  * @stack: the stack
