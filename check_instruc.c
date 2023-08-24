@@ -38,9 +38,9 @@ instruction_t *check_instruc(char *line)
 		if (strcmp(instruction->opcode, "nop") == 0)
 			instruction->f = nop;
 		if (strcmp(instruction->opcode, "stack") == 0)
-			instruction->f = stack;
+			instruction->f = is_stack;
 		if (strcmp(instruction->opcode, "queue") == 0)
-			instruction->f = queue;
+			instruction->f = is_queue;
 	}
 	return (instruction);
 }
