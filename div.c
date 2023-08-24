@@ -1,18 +1,18 @@
 #include "monty.h"
 
 /**
- * div - divides the second top element of stack by the top one
+ * divv - divides the second top element of stack by the top one
  * @stack: the stack
  * @line_number: line number
  */
 
-void div(stack_t **stack, unsigned int line_number)
+void divv(stack_t **stack, unsigned int line_number)
 {
 	int d;
 
 	if (((*stack) == NULL) || ((*stack)->next ==NULL))
 	{
-		fpintf(stdout,"L%d: can't div, stack too short\n", line_number);
+		fprintf(stdout,"L%d: can't div, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	/* div by zero: */

@@ -44,7 +44,7 @@ instruction_t *check_instruc(char *line)
 		if (strcmp(instruction->opcode, "sub") == 0)
 			instruction->f = sub;
 		if (strcmp(instruction->opcode, "div") == 0)
-			instruction->f = div;
+			instruction->f = divv;
 		if (strcmp(instruction->opcode, "mul") == 0)
 			instruction->f = mul;
 		if (strcmp(instruction->opcode, "mod") == 0)
