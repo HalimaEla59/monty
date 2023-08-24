@@ -37,7 +37,6 @@ void push(stack_t **stack, unsigned int line_number)
 	/* case 2: if stack is a stack LIFO */
 	else if (idx == 1)
 	{
-		(*stack)->prev == res;
 		res->next = *stack;
 		*stack = res;
 	}
