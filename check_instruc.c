@@ -51,6 +51,12 @@ instruction_t *check_instruc(char *line)
 			instruction->f = mod;
 		if (strcmp(instruction->opcode, "pchar") == 0)
 			instruction->f = pchar;
+		if (strcmp(instruction->opcode, "pstr") == 0)
+			instruction->f = pstr;
+		if (strcmp(instruction->opcode, "rotl") == 0)
+			instruction->f = rotl;
+		if (strcmp(instruction->opcode, "rotr") == 0)
+			instruction->f = rotr;
 	}
 	return (instruction);
 }
