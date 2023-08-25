@@ -15,7 +15,7 @@ void push(stack_t **stack, unsigned int line_number)
 	argument = strtok(NULL, "\n \t");
 	if (!is_int(argument))
 	{
-		fprintf(stdout, "L%u: usage: push integer\n", line_number);
+		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	value = atoi(argument);
@@ -23,7 +23,7 @@ void push(stack_t **stack, unsigned int line_number)
 	res = malloc(sizeof(stack_t));
 	if (res == NULL)
 	{
-		fprintf(stdout, "Error: malloc failed\n");
+		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
 	res->n = value; /*we put the value in stack res*/
