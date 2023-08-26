@@ -12,7 +12,7 @@ void push(stack_t **stack, unsigned int line_number)
 	int value;
 	stack_t *res, *temp;
 
-	argument = strtok(opcode, " ");
+	argument = strtok(NULL, " ");
 	if (!is_int(argument))
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);

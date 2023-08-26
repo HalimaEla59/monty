@@ -39,7 +39,6 @@ typedef struct instruction_s
 
 #define UNUSED(x) (void)(x)
 extern int fifolifo;
-extern char *opcode;
 
 void push(stack_t **stack, unsigned int line_number);
 void is_stack(stack_t **stack, unsigned int line_number);
